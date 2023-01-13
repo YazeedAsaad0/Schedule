@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  background: #00BCFF;
+}
+.wrapper,
+.header-div,
+.inputs,
+.li-div {
+  display: flex;
+}
+.wrapper {
+  margin: 10px 5px 10px 10px;
+  box-shadow: 0 0 5px black;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header-div {
+  padding: 10px 10px;
+  flex-direction:column;
+  justify-content: space-between;
+  background: #0089FF;
+}
+.inputs {
+  padding: 0 0 15px 0;
+  flex-direction: row;
+  justify-content: center;
+}
+#headline {
+  text-align: center;
+  font-size: 45px;
+}
+/*  change this if you put another input type text */
+
+input[type="text"] {
+  padding: 10px 10px;
+}
+input[type="text"]:hover {
+  box-shadow: 0 0 .5px black;
+}
+button[name="button"] {
+  border: 0 solid black;
+  background: #00BCFF;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color .5s;
+}
+.add-btn {
+  padding: 0 30px;
+}
+button[name="button"]:hover {
+  color: white;
+  background: #70B3FF;
+}
+button[name="button2"] {
+  padding: 10px 0;
+  border: 0 solid black;
+  background: #19C4DE;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button[name="button2"]:hover {
+  background: #17ACC3;
+}
+@media (max-width:480px) {
+  .inputs {
+    flex-direction: column;
+  }
+  button[name="button"] {
+    padding: 10px 0;
+  }
+.update-btn {
+  order: 1;
+}
+}
+
+
+/* the start of the List item */
+
+.li-div {
+  background: white;
+  flex-direction: column;
+  padding-right: 35px;
+}
+li {
+  list-style: none;
+  padding: 25px 0;
+  font-size: 20px;
+  border-bottom: 1px solid #5F8F97;
+}
+li:last-child {
+  border: none;
+}
+
+button[type="submit"] {
+  padding: 10px 10px;
+  width: 187px;
+  margin: 38px;
+  border: 0 solid black;
+  background: #CE3939;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color .5s;
+  text-align: left;
+}
+
+@media (min-width:865px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 60%;
+    justify-content: space-around;
+  }
+}
+
+/* Additional styles */
+
+.hide1 {
+  background: #007689;
+  transition: background .5s ease-in-out;
+}
