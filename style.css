@@ -7,8 +7,13 @@
 .wrapper,
 .header-div,
 .inputs,
-.li-div {
+.li-div,
+li,
+.remove {
   display: flex;
+}
+li {
+  justify-content: space-between;
 }
 .wrapper {
   margin: 10px 5px 10px 10px;
@@ -30,6 +35,12 @@
 #headline {
   text-align: center;
   font-size: 45px;
+}
+.li-div h2 {
+  padding: 10px 0 10px 40px;
+  margin: auto;
+  color: #00BCFF;
+  font-size: 15px;
 }
 /*  change this if you put another input type text */
 
@@ -73,12 +84,21 @@ button[name="button2"]:hover {
   }
 .update-btn {
   order: 1;
-}
+  }
 }
 
 
 /* the start of the List item */
-
+.remove {
+  padding: 2px 5px;
+  border: 0 solid black;
+  border-radius: 10px 10px;
+  justify-content: space-between;
+  background: #CE3939;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
 .li-div {
   background: white;
   flex-direction: column;
@@ -118,7 +138,13 @@ button[type="submit"] {
 
 /* Additional styles */
 
-.hide1 {
-  background: #007689;
-  transition: background .5s ease-in-out;
+@media (max-width:350px){
+  li {
+    flex-direction: column;
+  }
+  .remove {
+    padding: 5px 0;
+    width:  85px;
+    justify-content: space-around;
+  }
 }
