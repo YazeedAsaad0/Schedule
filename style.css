@@ -105,6 +105,7 @@ button[name="button2"]:hover {
   padding-right: 35px;
 }
 li {
+  cursor: pointer;
   list-style: none;
   padding: 25px 0;
   font-size: 20px;
